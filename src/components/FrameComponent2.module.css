@@ -1,0 +1,86 @@
+.wrapperGroup3,
+.wrapperGroup3Child {
+  position: absolute;
+  mix-blend-mode: normal;
+}
+.wrapperGroup3Child {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  left: 0;
+  top: 0;
+  transform: scale(2.061);
+}
+.wrapperGroup3 {
+  top: 442px;
+  left: 168px;
+  width: 900.5px;
+  height: 892.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trendLogoIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1277.5px;
+  height: 1277.5px;
+  object-fit: contain;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+.wrapperGroup3Parent {
+  height: 1334.5px;
+  width: 1277.5px;
+  position: absolute;
+  margin: 0 !important;
+  top: -616px;
+  left: -190px;
+}
+.loremIpsumDolor {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 138%;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 2;
+}
+.frameParent,
+.macbookAir1Inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  width: 898px;
+  justify-content: flex-start;
+  position: relative;
+}
+.macbookAir1Inner {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-8xs) var(--padding-41xl) 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-sf-pro-display);
+}
+@media screen and (max-width: 750px) {
+  .loremIpsumDolor {
+    font-size: var(--font-size-5xl);
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .loremIpsumDolor {
+    font-size: var(--font-size-lg);
+    line-height: 25px;
+  }
+}
