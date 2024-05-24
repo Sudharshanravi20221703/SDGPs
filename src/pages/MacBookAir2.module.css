@@ -1,0 +1,197 @@
+.gP,
+.sD {
+  margin: 0;
+}
+.sDGContainer {
+  width: 36px;
+  position: relative;
+  letter-spacing: 0.4em;
+  line-height: 168%;
+  display: inline-block;
+  cursor: pointer;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  left: -420px;
+  width: 1277.5px;
+  height: 1277.5px;
+  object-fit: contain;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+.wrapperGroup3,
+.wrapperGroup3Child {
+  position: absolute;
+  mix-blend-mode: normal;
+  z-index: 2;
+}
+.wrapperGroup3Child {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  left: 0;
+  top: 0;
+  transform: scale(2.061);
+}
+.wrapperGroup3 {
+  top: 442px;
+  left: -252px;
+  width: 900.5px;
+  height: 892.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.sDGPParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-23xl) var(--padding-xl) 689px 52px;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 557px;
+  min-height: 832px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-sf-pro-display);
+}
+.component63Icon {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  debug_commit: bf4bc93;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  transform: scale(1.871);
+}
+.wrapperComponent63 {
+  width: 70px;
+  height: 28.6px;
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: bf4bc93;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blankLine,
+.blankLine1,
+.contact,
+.home,
+.projects {
+  margin: 0;
+}
+.homeProjectsContactContainer {
+  margin: 0;
+  width: 414px;
+  position: relative;
+  font-size: inherit;
+  line-height: 97.47%;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  debug_commit: bf4bc93;
+  max-width: 100%;
+}
+.homeProjectsContactWrapper,
+.wrapperComponent63Parent {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.homeProjectsContactWrapper {
+  flex-direction: row;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.wrapperComponent63Parent {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 194.4px;
+}
+.macbookAir2,
+.macbookAir2Inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.macbookAir2Inner {
+  width: 484px;
+  flex-direction: column;
+  padding: 53px 0 0;
+  min-width: 484px;
+  max-width: 100%;
+  margin-left: -95.5px;
+}
+.macbookAir2 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 34px 0 0;
+  line-height: normal;
+  letter-spacing: normal;
+  row-gap: 20px;
+  text-align: right;
+  font-size: var(--font-size-31xl);
+  color: var(--color-black);
+  font-family: var(--font-sf-pro-display);
+}
+@media screen and (max-width: 1025px) {
+  .macbookAir2Inner {
+    flex: 1;
+    margin-left: 0;
+  }
+  .macbookAir2 {
+    flex-wrap: wrap;
+    padding: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 975px) {
+  .homeProjectsContactContainer {
+    font-size: var(--font-size-21xl);
+    line-height: 39px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .sDGPParent {
+    padding-top: var(--padding-8xl);
+    padding-bottom: 448px;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .wrapperComponent63Parent {
+    gap: 97px;
+  }
+  .macbookAir2Inner {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .homeProjectsContactContainer {
+    font-size: var(--font-size-11xl);
+    line-height: 29px;
+  }
+}

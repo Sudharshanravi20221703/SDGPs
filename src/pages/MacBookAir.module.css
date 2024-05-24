@@ -35,7 +35,7 @@
   justify-content: space-between;
   gap: var(--gap-xl);
   text-align: left;
-  font-size: 15px;
+  font-size: var(--font-size-mini);
   color: var(--color-white);
   font-family: var(--font-sf-pro-display);
 }
@@ -85,7 +85,7 @@
   box-sizing: border-box;
   max-width: 100%;
   text-align: left;
-  font-size: 50px;
+  font-size: var(--font-size-31xl);
   color: var(--color-white);
   font-family: var(--font-sf-pro-display);
 }
@@ -135,10 +135,11 @@
 .macbookAir1 {
   width: 100%;
   position: relative;
-  background-color: #000;
+  background-color: var(--color-black);
   overflow: hidden;
   flex-direction: column;
-  padding: 43px 47px var(--padding-112xl) var(--padding-31xl);
+  padding: var(--padding-24xl) var(--padding-28xl) var(--padding-112xl)
+    var(--padding-31xl);
   gap: 230px;
   line-height: normal;
   letter-spacing: normal;
@@ -150,19 +151,19 @@
 }
 @media screen and (max-width: 750px) {
   .innovateCollaborateInspire {
-    font-size: 40px;
+    font-size: var(--font-size-21xl);
     line-height: 39px;
   }
   .projects {
     font-size: 36px;
   }
   .frameParent {
-    gap: 18px;
+    gap: var(--gap-lg);
   }
   .macbookAir1 {
     gap: 115px;
-    padding-left: 25px;
-    padding-right: 23px;
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-4xl);
     box-sizing: border-box;
   }
 }

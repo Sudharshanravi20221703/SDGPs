@@ -6,6 +6,9 @@ import {
   useLocation,
 } from "react-router-dom";
 import MacBookAir from "./pages/MacBookAir";
+import MacBookAir1 from "./pages/MacBookAir1";
+import MacBookAir2 from "./pages/MacBookAir2";
+import MacBookAir from "./pages/MacBookAir3";
 
 function App() {
   const action = useNavigationType();
@@ -24,6 +27,18 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/macbook-air-3":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/macbook-air-2":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/macbook-air-4":
         title = "";
         metaDescription = "";
         break;
@@ -46,6 +61,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MacBookAir />} />
+      <Route path="/macbook-air-3" element={<MacBookAir1 />} />
+      <Route path="/macbook-air-2" element={<MacBookAir2 />} />
+      <Route path="/macbook-air-4" element={<MacBookAir />} />
     </Routes>
   );
 }
