@@ -1,27 +1,37 @@
-import styles from "./FrameComponent1.module.css";
-
 const FrameComponent1 = ({ className = "" }) => {
   return (
-    <div className={[styles.frameParent, className].join(" ")}>
-      <div className={styles.iconLinechevronLeftWrapper}>
+    <div
+      className={`self-stretch flex flex-row items-start justify-center gap-[59px] max-w-full text-left text-xs text-white font-inter mq750:gap-[29px] mq1225:flex-wrap ${className}`}
+    >
+      <div className="flex flex-col items-start justify-start pt-36 px-0 pb-0">
         <img
-          className={styles.iconLinechevronLeft}
+          className="w-8 h-8 relative overflow-hidden shrink-0"
           loading="lazy"
           alt=""
           src="/icon-linechevronleft.svg"
         />
       </div>
-      <div className={styles.cardWrapper}>
-        <div className={styles.card}>
-          <img className={styles.imageIcon} alt="" src="/image@2x.png" />
-          <div className={styles.genreParent}>
-            <div className={styles.genre}>Genre</div>
-            <b className={styles.projectName}>Project Name</b>
-            <div className={styles.groupNumberParent}>
-              <div className={styles.groupNumber}>Group Number</div>
-              <div className={styles.pharrowRightBoldWrapper}>
+      <div className="w-[281px] flex flex-col items-start justify-start py-0 pr-[31px] pl-0 box-border">
+        <div className="self-stretch h-80 rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] z-[1] mq450:h-auto mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+          <img
+            className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+            alt=""
+            src="/image@2x.png"
+          />
+          <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+            <div className="relative inline-block min-w-[35px] z-[1]">
+              Genre
+            </div>
+            <b className="w-[190px] relative text-6xl inline-block z-[1] mq450:text-xl">
+              Project Name
+            </b>
+            <div className="self-stretch flex flex-row items-start justify-between gap-[20px] mq450:flex-wrap">
+              <div className="relative inline-block min-w-[84px] z-[1]">
+                Group Number
+              </div>
+              <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                 <img
-                  className={styles.pharrowRightBoldIcon}
+                  className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt=""
                   src="/pharrowrightbold.svg"
@@ -30,23 +40,33 @@ const FrameComponent1 = ({ className = "" }) => {
             </div>
           </div>
           <img
-            className={styles.pharrowRightBoldIcon1}
+            className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
             alt=""
             src="/pharrowrightbold.svg"
           />
         </div>
       </div>
-      <div className={styles.cardContainer}>
-        <div className={styles.card1}>
-          <img className={styles.imageIcon1} alt="" src="/image@2x.png" />
-          <div className={styles.genreGroup}>
-            <div className={styles.genre1}>Genre</div>
-            <h1 className={styles.projectName1}>Project Name</h1>
-            <div className={styles.groupNumberGroup}>
-              <div className={styles.groupNumber1}>Group Number</div>
-              <div className={styles.pharrowRightBoldContainer}>
+      <div className="w-[281px] flex flex-col items-start justify-start py-0 pr-[31px] pl-0 box-border">
+        <div className="self-stretch h-80 rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] z-[1] mq450:h-auto mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+          <img
+            className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+            alt=""
+            src="/image@2x.png"
+          />
+          <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+            <div className="relative inline-block min-w-[35px] z-[1]">
+              Genre
+            </div>
+            <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+              Project Name
+            </h1>
+            <div className="self-stretch flex flex-row items-start justify-between gap-[20px] mq450:flex-wrap">
+              <div className="relative inline-block min-w-[84px] z-[1]">
+                Group Number
+              </div>
+              <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                 <img
-                  className={styles.pharrowRightBoldIcon2}
+                  className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt=""
                   src="/pharrowrightbold.svg"
@@ -55,23 +75,33 @@ const FrameComponent1 = ({ className = "" }) => {
             </div>
           </div>
           <img
-            className={styles.pharrowRightBoldIcon3}
+            className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
             alt=""
             src="/pharrowrightbold.svg"
           />
         </div>
       </div>
-      <div className={styles.cardParent}>
-        <div className={styles.card2}>
-          <img className={styles.imageIcon2} alt="" src="/image@2x.png" />
-          <div className={styles.genreContainer}>
-            <div className={styles.genre2}>Genre</div>
-            <h1 className={styles.projectName2}>Project Name</h1>
-            <div className={styles.groupNumberContainer}>
-              <div className={styles.groupNumber2}>Group Number</div>
-              <div className={styles.pharrowRightBoldFrame}>
+      <div className="w-[334px] flex flex-row items-start justify-start gap-[52px] max-w-full mq450:flex-wrap mq450:gap-[26px]">
+        <div className="h-80 flex-1 rounded-xl bg-white overflow-hidden flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] min-w-[162px] z-[1] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+          <img
+            className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+            alt=""
+            src="/image@2x.png"
+          />
+          <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+            <div className="relative inline-block min-w-[35px] z-[1]">
+              Genre
+            </div>
+            <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+              Project Name
+            </h1>
+            <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+              <div className="relative inline-block min-w-[84px] z-[1]">
+                Group Number
+              </div>
+              <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                 <img
-                  className={styles.pharrowRightBoldIcon4}
+                  className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt=""
                   src="/pharrowrightbold.svg"
@@ -80,14 +110,14 @@ const FrameComponent1 = ({ className = "" }) => {
             </div>
           </div>
           <img
-            className={styles.pharrowRightBoldIcon5}
+            className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
             alt=""
             src="/pharrowrightbold.svg"
           />
         </div>
-        <div className={styles.iconLinechevronRightWrapper}>
+        <div className="flex flex-col items-start justify-start pt-[139px] px-0 pb-0">
           <img
-            className={styles.iconLinechevronRight}
+            className="w-8 h-8 relative overflow-hidden shrink-0"
             loading="lazy"
             alt=""
             src="/icon-linechevronright.svg"

@@ -1,6 +1,5 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./MacBookAir1.module.css";
 
 const MacBookAir1 = () => {
   const navigate = useNavigate();
@@ -10,59 +9,70 @@ const MacBookAir1 = () => {
   }, [navigate]);
 
   return (
-    <div className={styles.macbookAir3}>
-      <header className={styles.sDGPParent}>
-        <b className={styles.sDGContainer} onClick={onSDGClick}>
-          <p className={styles.sD}>S D</p>
-          <p className={styles.gP}>G P</p>
+    <div className="w-full relative bg-black overflow-hidden flex flex-col items-end justify-start pt-[43px] px-[47px] pb-[170px] box-border gap-[201px] leading-[normal] tracking-[normal] mq450:gap-[50px] mq750:gap-[100px] mq750:pl-[23px] mq750:pr-[23px] mq750:box-border">
+      <header className="self-stretch flex flex-row items-start justify-between gap-[20px] text-left text-mini text-white font-sf-pro-display">
+        <b
+          className="w-9 relative tracking-[0.4em] leading-[168%] inline-block cursor-pointer"
+          onClick={onSDGClick}
+        >
+          <p className="m-0">S D</p>
+          <p className="m-0">G P</p>
         </b>
-        <div className={styles.component64Wrapper}>
+        <div className="w-[70px] flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border">
           <img
-            className={styles.component64Icon}
+            className="self-stretch h-[28.6px] relative max-w-full overflow-hidden shrink-0 z-[2]"
             loading="lazy"
             alt=""
             src="/component-64.svg"
           />
         </div>
       </header>
-      <main className={styles.macbookAir3Inner}>
-        <section className={styles.frameParent}>
-          <div className={styles.frameWrapper}>
-            <div className={styles.frameGroup}>
-              <div className={styles.wrapperGroup3Parent}>
-                <div className={styles.wrapperGroup3}>
+      <main className="w-[1091px] flex flex-row items-start justify-end py-0 px-[33px] box-border max-w-full">
+        <section className="flex-1 flex flex-col items-start justify-start gap-[118px] max-w-full text-left text-81xl text-white font-sf-pro-display mq750:gap-[29px] mq1025:gap-[59px]">
+          <div className="w-[929px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
+            <div className="w-[351px] flex flex-row items-start justify-start relative max-w-full">
+              <div className="h-[1261.5px] w-[608px] absolute !m-[0] right-[-465px] bottom-[-819.5px]">
+                <div className="absolute top-[369px] left-[158px] w-[900.5px] h-[892.5px] mix-blend-normal flex items-center justify-center">
                   <img
-                    className={styles.wrapperGroup3Child}
+                    className="w-full h-full mix-blend-normal object-contain absolute left-[0px] top-[0px] [transform:scale(2.061)]"
                     alt=""
                     src="/group-3.svg"
                   />
                 </div>
                 <img
-                  className={styles.projectActionsIcon}
+                  className="absolute top-[-97px] left-[0px] w-[1277.5px] h-[1277.5px] object-contain mix-blend-overlay z-[1]"
                   alt=""
                   src="/trend-logo.svg"
                 />
               </div>
-              <h1 className={styles.projects}>Projects</h1>
+              <h1 className="m-0 flex-1 relative text-inherit leading-[97.47%] font-medium font-inherit inline-block max-w-full z-[2] mq450:text-11xl mq450:leading-[39px] mq1025:text-31xl mq1025:leading-[58px]">
+                Projects
+              </h1>
             </div>
           </div>
-          <div className={styles.frameContainer}>
-            <div className={styles.cardContentContainerParent}>
-              <div className={styles.cardContentContainer}>
-                <div className={styles.card}>
+          <div className="self-stretch flex flex-col items-start justify-start gap-[70px] max-w-full text-xs font-inter mq750:gap-[17px] mq1025:gap-[35px]">
+            <div className="self-stretch flex flex-row items-start justify-center gap-[71px] mq750:gap-[18px] mq1125:flex-wrap mq1025:gap-[35px]">
+              <div className="w-[269px] flex flex-col items-start justify-start py-0 pr-[19px] pl-0 box-border">
+                <div className="self-stretch h-80 rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
                   <img
-                    className={styles.imageIcon}
+                    className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
                     alt=""
                     src="/image@2x.png"
                   />
-                  <div className={styles.genreParent}>
-                    <div className={styles.genre}>Genre</div>
-                    <h1 className={styles.projectName}>Project Name</h1>
-                    <div className={styles.groupNumberParent}>
-                      <div className={styles.groupNumber}>Group Number</div>
-                      <div className={styles.pharrowRightBoldWrapper}>
+                  <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                    <div className="relative inline-block min-w-[35px] z-[1]">
+                      Genre
+                    </div>
+                    <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                      Project Name
+                    </h1>
+                    <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                      <div className="relative inline-block min-w-[84px] z-[1]">
+                        Group Number
+                      </div>
+                      <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                         <img
-                          className={styles.pharrowRightBoldIcon}
+                          className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                           loading="lazy"
                           alt=""
                           src="/pharrowrightbold.svg"
@@ -71,27 +81,33 @@ const MacBookAir1 = () => {
                     </div>
                   </div>
                   <img
-                    className={styles.pharrowRightBoldIcon1}
+                    className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                     alt=""
                     src="/pharrowrightbold.svg"
                   />
                 </div>
               </div>
-              <div className={styles.cardContentContainer1}>
-                <div className={styles.card1}>
+              <div className="w-[269px] flex flex-col items-start justify-start py-0 pr-[19px] pl-0 box-border">
+                <div className="self-stretch h-80 rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] z-[2] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
                   <img
-                    className={styles.imageIcon1}
+                    className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
                     alt=""
                     src="/image@2x.png"
                   />
-                  <div className={styles.genreGroup}>
-                    <div className={styles.genre1}>Genre</div>
-                    <h1 className={styles.projectName1}>Project Name</h1>
-                    <div className={styles.groupNumberGroup}>
-                      <div className={styles.groupNumber1}>Group Number</div>
-                      <div className={styles.pharrowRightBoldContainer}>
+                  <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                    <div className="relative inline-block min-w-[35px] z-[1]">
+                      Genre
+                    </div>
+                    <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                      Project Name
+                    </h1>
+                    <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                      <div className="relative inline-block min-w-[84px] z-[1]">
+                        Group Number
+                      </div>
+                      <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                         <img
-                          className={styles.pharrowRightBoldIcon2}
+                          className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                           loading="lazy"
                           alt=""
                           src="/pharrowrightbold.svg"
@@ -100,22 +116,32 @@ const MacBookAir1 = () => {
                     </div>
                   </div>
                   <img
-                    className={styles.pharrowRightBoldIcon3}
+                    className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                     alt=""
                     src="/pharrowrightbold.svg"
                   />
                 </div>
               </div>
-              <div className={styles.card2}>
-                <img className={styles.imageIcon2} alt="" src="/image@2x.png" />
-                <div className={styles.genreContainer}>
-                  <div className={styles.genre2}>Genre</div>
-                  <h1 className={styles.projectName2}>Project Name</h1>
-                  <div className={styles.groupNumberContainer}>
-                    <div className={styles.groupNumber2}>Group Number</div>
-                    <div className={styles.pharrowRightBoldFrame}>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] z-[2] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                       <img
-                        className={styles.pharrowRightBoldIcon4}
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                         loading="lazy"
                         alt=""
                         src="/pharrowrightbold.svg"
@@ -124,191 +150,36 @@ const MacBookAir1 = () => {
                   </div>
                 </div>
                 <img
-                  className={styles.pharrowRightBoldIcon5}
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                   alt=""
                   src="/pharrowrightbold.svg"
                 />
               </div>
-              <div className={styles.iconLinefilterWrapper}>
-                <div className={styles.iconLinefilter} />
+              <div className="flex flex-col items-start justify-start pt-[148px] px-0 pb-0">
+                <div className="w-6 h-6 relative z-[2]" />
               </div>
             </div>
-            <div className={styles.cardListContainer}>
-              <div className={styles.card3}>
-                <img className={styles.imageIcon3} alt="" src="/image@2x.png" />
-                <div className={styles.frameDiv}>
-                  <div className={styles.genre3}>Genre</div>
-                  <h1 className={styles.projectName3}>Project Name</h1>
-                  <div className={styles.groupNumberParent1}>
-                    <div className={styles.groupNumber3}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper1}>
-                      <img
-                        className={styles.pharrowRightBoldIcon6}
-                        loading="lazy"
-                        alt=""
-                        src="/pharrowrightbold.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
+            <div className="w-[930px] flex flex-row flex-wrap items-start justify-start gap-[70px_88px] min-h-[1100px] max-w-full mq450:gap-[22px] mq750:gap-[44px]">
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
                 <img
-                  className={styles.pharrowRightBoldIcon7}
-                  alt=""
-                  src="/pharrowrightbold.svg"
-                />
-              </div>
-              <div className={styles.card4}>
-                <img className={styles.imageIcon4} alt="" src="/image@2x.png" />
-                <div className={styles.genreParent1}>
-                  <div className={styles.genre4}>Genre</div>
-                  <h1 className={styles.projectName4}>Project Name</h1>
-                  <div className={styles.groupNumberParent2}>
-                    <div className={styles.groupNumber4}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper2}>
-                      <img
-                        className={styles.pharrowRightBoldIcon8}
-                        loading="lazy"
-                        alt=""
-                        src="/pharrowrightbold.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className={styles.pharrowRightBoldIcon9}
-                  alt=""
-                  src="/pharrowrightbold.svg"
-                />
-              </div>
-              <div className={styles.card5}>
-                <img className={styles.imageIcon5} alt="" src="/image@2x.png" />
-                <div className={styles.genreParent2}>
-                  <div className={styles.genre5}>Genre</div>
-                  <h1 className={styles.projectName5}>Project Name</h1>
-                  <div className={styles.groupNumberParent3}>
-                    <div className={styles.groupNumber5}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper3}>
-                      <img
-                        className={styles.pharrowRightBoldIcon10}
-                        loading="lazy"
-                        alt=""
-                        src="/pharrowrightbold.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className={styles.pharrowRightBoldIcon11}
-                  alt=""
-                  src="/pharrowrightbold.svg"
-                />
-              </div>
-              <div className={styles.card6}>
-                <img className={styles.imageIcon6} alt="" src="/image@2x.png" />
-                <div className={styles.genreParent3}>
-                  <div className={styles.genre6}>Genre</div>
-                  <h1 className={styles.projectName6}>Project Name</h1>
-                  <div className={styles.groupNumberParent4}>
-                    <div className={styles.groupNumber6}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper4}>
-                      <img
-                        className={styles.pharrowRightBoldIcon12}
-                        loading="lazy"
-                        alt=""
-                        src="/pharrowrightbold.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className={styles.pharrowRightBoldIcon13}
-                  alt=""
-                  src="/pharrowrightbold.svg"
-                />
-              </div>
-              <div className={styles.card7}>
-                <img className={styles.imageIcon7} alt="" src="/image@2x.png" />
-                <div className={styles.genreParent4}>
-                  <div className={styles.genre7}>Genre</div>
-                  <h1 className={styles.projectName7}>Project Name</h1>
-                  <div className={styles.groupNumberParent5}>
-                    <div className={styles.groupNumber7}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper5}>
-                      <img
-                        className={styles.pharrowRightBoldIcon14}
-                        loading="lazy"
-                        alt=""
-                        src="/pharrowrightbold.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className={styles.pharrowRightBoldIcon15}
-                  alt=""
-                  src="/pharrowrightbold.svg"
-                />
-              </div>
-              <div className={styles.card8}>
-                <img className={styles.imageIcon8} alt="" src="/image@2x.png" />
-                <div className={styles.genreParent5}>
-                  <div className={styles.genre8}>Genre</div>
-                  <h1 className={styles.projectName8}>Project Name</h1>
-                  <div className={styles.groupNumberParent6}>
-                    <div className={styles.groupNumber8}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper6}>
-                      <img
-                        className={styles.pharrowRightBoldIcon16}
-                        loading="lazy"
-                        alt=""
-                        src="/pharrowrightbold.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className={styles.pharrowRightBoldIcon17}
-                  alt=""
-                  src="/pharrowrightbold.svg"
-                />
-              </div>
-              <div className={styles.card9}>
-                <img className={styles.imageIcon9} alt="" src="/image@2x.png" />
-                <div className={styles.genreParent6}>
-                  <div className={styles.genre9}>Genre</div>
-                  <h1 className={styles.projectName9}>Project Name</h1>
-                  <div className={styles.groupNumberParent7}>
-                    <div className={styles.groupNumber9}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper7}>
-                      <img
-                        className={styles.pharrowRightBoldIcon18}
-                        loading="lazy"
-                        alt=""
-                        src="/pharrowrightbold.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className={styles.pharrowRightBoldIcon19}
-                  alt=""
-                  src="/pharrowrightbold.svg"
-                />
-              </div>
-              <div className={styles.card10}>
-                <img
-                  className={styles.imageIcon10}
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
                   alt=""
                   src="/image@2x.png"
                 />
-                <div className={styles.genreParent7}>
-                  <div className={styles.genre10}>Genre</div>
-                  <h1 className={styles.projectName10}>Project Name</h1>
-                  <div className={styles.groupNumberParent8}>
-                    <div className={styles.groupNumber10}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper8}>
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                       <img
-                        className={styles.pharrowRightBoldIcon20}
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                         loading="lazy"
                         alt=""
                         src="/pharrowrightbold.svg"
@@ -317,25 +188,31 @@ const MacBookAir1 = () => {
                   </div>
                 </div>
                 <img
-                  className={styles.pharrowRightBoldIcon21}
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                   alt=""
                   src="/pharrowrightbold.svg"
                 />
               </div>
-              <div className={styles.card11}>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] z-[2] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
                 <img
-                  className={styles.imageIcon11}
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
                   alt=""
                   src="/image@2x.png"
                 />
-                <div className={styles.genreParent8}>
-                  <div className={styles.genre11}>Genre</div>
-                  <h1 className={styles.projectName11}>Project Name</h1>
-                  <div className={styles.groupNumberParent9}>
-                    <div className={styles.groupNumber11}>Group Number</div>
-                    <div className={styles.pharrowRightBoldWrapper9}>
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
                       <img
-                        className={styles.pharrowRightBoldIcon22}
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                         loading="lazy"
                         alt=""
                         src="/pharrowrightbold.svg"
@@ -344,7 +221,238 @@ const MacBookAir1 = () => {
                   </div>
                 </div>
                 <img
-                  className={styles.pharrowRightBoldIcon23}
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                  alt=""
+                  src="/pharrowrightbold.svg"
+                />
+              </div>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] z-[2] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
+                      <img
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                        loading="lazy"
+                        alt=""
+                        src="/pharrowrightbold.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                  alt=""
+                  src="/pharrowrightbold.svg"
+                />
+              </div>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
+                      <img
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                        loading="lazy"
+                        alt=""
+                        src="/pharrowrightbold.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                  alt=""
+                  src="/pharrowrightbold.svg"
+                />
+              </div>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
+                      <img
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                        loading="lazy"
+                        alt=""
+                        src="/pharrowrightbold.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                  alt=""
+                  src="/pharrowrightbold.svg"
+                />
+              </div>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
+                      <img
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                        loading="lazy"
+                        alt=""
+                        src="/pharrowrightbold.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                  alt=""
+                  src="/pharrowrightbold.svg"
+                />
+              </div>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
+                      <img
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                        loading="lazy"
+                        alt=""
+                        src="/pharrowrightbold.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                  alt=""
+                  src="/pharrowrightbold.svg"
+                />
+              </div>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
+                      <img
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                        loading="lazy"
+                        alt=""
+                        src="/pharrowrightbold.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                  alt=""
+                  src="/pharrowrightbold.svg"
+                />
+              </div>
+              <div className="h-80 w-[250px] rounded-xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-end pt-[201px] px-[18px] pb-[18px] box-border relative gap-[49px] mq450:pt-[131px] mq450:pb-5 mq450:box-border">
+                <img
+                  className="w-[306px] h-[424px] absolute !m-[0] top-[-57px] left-[-35px] object-cover"
+                  alt=""
+                  src="/image@2x.png"
+                />
+                <div className="w-[206px] flex flex-col items-start justify-start gap-[6px]">
+                  <div className="relative inline-block min-w-[35px] z-[1]">
+                    Genre
+                  </div>
+                  <h1 className="m-0 w-[190px] relative text-6xl font-bold font-inherit inline-block z-[1] mq450:text-xl">
+                    Project Name
+                  </h1>
+                  <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
+                    <div className="relative inline-block min-w-[84px] z-[1]">
+                      Group Number
+                    </div>
+                    <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
+                      <img
+                        className="w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
+                        loading="lazy"
+                        alt=""
+                        src="/pharrowrightbold.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="ml-[-64px] w-8 h-8 relative overflow-hidden shrink-0 z-[1]"
                   alt=""
                   src="/pharrowrightbold.svg"
                 />

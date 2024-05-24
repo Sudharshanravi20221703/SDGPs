@@ -17,79 +17,14 @@
   font-weight: 700;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
-  margin: 0;
-  line-height: normal;
+  @apply leading-[normal] m-0;
 }
-:root {
-  /* fonts */
-  --font-inter: Inter;
-  --font-sf-pro-display: "SF Pro Display";
-
-  /* font sizes */
-  --font-size-xs: 12px;
-  --font-size-6xl: 25px;
-  --font-size-xl: 20px;
-  --font-size-11xl: 30px;
-  --font-size-lg: 18px;
-  --font-size-5xl: 24px;
-  --font-size-31xl: 50px;
-  --font-size-21xl: 40px;
-  --font-size-mini: 15px;
-  --font-size-81xl: 100px;
-
-  /* Colors */
-  --color-black: #000;
-  --color-gainsboro-100: #d9d9d9;
-  --color-gainsboro-200: rgba(217, 217, 217, 0.28);
-  --color-white: #fff;
-  --color-gray: #262626;
-
-  /* Gaps */
-  --gap-lg: 18px;
-  --gap-42xl: 61px;
-  --gap-40xl: 59px;
-  --gap-10xl: 29px;
-  --gap-33xl: 52px;
-  --gap-7xl: 26px;
-  --gap-30xl: 49px;
-  --gap-7xs: 6px;
-  --gap-xl: 20px;
-  --gap-182xl: 201px;
-  --gap-31xl: 50px;
-  --gap-81xl: 100px;
-  --gap-51xl: 70px;
-  --gap-mid: 17px;
-  --gap-16xl: 35px;
-  --gap-3xl: 22px;
-  --gap-25xl: 44px;
-  --gap-base: 16px;
-  --gap-14xl: 33px;
-
-  /* Paddings */
-  --padding-24xl: 43px;
-  --padding-28xl: 47px;
-  --padding-112xl: 131px;
-  --padding-31xl: 50px;
-  --padding-6xl: 25px;
-  --padding-4xl: 23px;
-  --padding-xl: 20px;
-  --padding-8xl: 27px;
-  --padding-120xl: 139px;
-  --padding-182xl: 201px;
-  --padding-lg: 18px;
-  --padding-xs: 12px;
-  --padding-12xl: 31px;
-  --padding-125xl: 144px;
-  --padding-8xs: 5px;
-  --padding-41xl: 60px;
-  --padding-151xl: 170px;
-  --padding-lgi: 19px;
-  --padding-9xs: 4px;
-  --padding-23xl: 42px;
-  --padding-5xl: 24px;
-
-  /* Border radiuses */
-  --br-xl: 20px;
-  --br-30xl: 49px;
+*,
+::before,
+::after {
+  border-width: 0;
 }

@@ -1,19 +1,20 @@
 import { Button } from "@mui/material";
-import styles from "./FrameComponent.module.css";
 
 const FrameComponent = ({ className = "" }) => {
   return (
-    <div className={[styles.frameWrapper, className].join(" ")}>
-      <div className={styles.frameParent}>
-        <div className={styles.frameContainer}>
-          <div className={styles.ellipseParent}>
-            <div className={styles.frameChild} />
-            <div className={styles.frameItem} />
-            <div className={styles.bottomNavigator} />
+    <div
+      className={`self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[27px] ${className}`}
+    >
+      <div className="w-[150px] flex flex-col items-start justify-start gap-[61px]">
+        <div className="self-stretch flex flex-row items-start justify-start py-0 px-[50px]">
+          <div className="h-2.5 flex-1 relative">
+            <div className="absolute top-[0px] left-[0px] rounded-[50%] bg-gainsboro-100 w-2.5 h-2.5" />
+            <div className="absolute top-[0px] left-[20px] rounded-[50%] bg-gainsboro-200 w-2.5 h-2.5" />
+            <div className="absolute top-[0px] left-[40px] rounded-[50%] bg-gainsboro-200 w-2.5 h-2.5" />
           </div>
         </div>
         <Button
-          className={styles.normalButtonCore}
+          className="self-stretch h-[55px]"
           disableElevation={true}
           variant="contained"
           sx={{
